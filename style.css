@@ -1,5 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
 form {
   width: 640px;
   height: 654px;
   background-color: rgb(4, 9, 51);
+  color: white;
+  padding: 24px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  border: 1px solid white;
+  background-color: rgb(4, 9, 51);
+  color: white;
+  padding-left: 8px;
+  font-size: 18px;
+}
+
+input {
+  height: 40px;
+}
+
+div.name_lastname {
+  display: flex;
+  gap: 20px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+div.email,
+div.phone,
+div.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+textarea {
+  /* max-height: 300px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 300px; */
+  resize: none;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  height: 41px;
+  background-color: white;
+  color: rgb(4, 9, 51);
+  border-radius: none;
+  border: none;
+  margin-top: 40px;
 }
